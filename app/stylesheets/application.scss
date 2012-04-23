@@ -13,16 +13,17 @@ body.public {
     width:          920px;
 
     margin:         0 auto;
+
+
+    .topic {
+      @include          inline-block;
+      @include          border-radius(5px);
+
+      border:           1px solid #000;
+      background-color: brown;
+
+      width:            180px;
+      height:           100px;
+    }
   }
-}
-
-.topic {
-  @include          inline-block;
-  @include          border-radius(5px);
-
-  border:           1px solid #000;
-  background-color: brown;
-
-  width:            200px;
-  height:           100px;
 }
