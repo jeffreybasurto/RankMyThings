@@ -4,6 +4,9 @@ class RankMyThings < Padrino::Application
   register Padrino::Helpers
   register CompassInitializer
 
+  configure :production do
+    set :port, 80
+  end
 
   enable :sessions
 
