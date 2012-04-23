@@ -4,7 +4,19 @@
 @import "compass";
 @import "compass/css3";
 
+$standard-bg:       #336078;
+
+body {
+  background-color: $standard-bg;
+}
 
 .topic {
-  @include       inline-block;
+  @include          inline-block;
+  @include          border-radius(5px);
+
+  border:           1px solid #000;
+  background-color: brown;
+
+  width:            200px;
+  height:           100px;
 }
