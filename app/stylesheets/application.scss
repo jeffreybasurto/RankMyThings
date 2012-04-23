@@ -10,10 +10,10 @@ body.public {
   background-color: $standard-bg;
 
   .content {
-    width:          920px;
+    width:              920px;
 
-    margin:         0 auto;
-
+    margin:             0 auto;
+    margin-top:         20px;
 
     .topic {
       @include          inline-block;
@@ -22,8 +22,10 @@ body.public {
       border:           1px solid #000;
       background-color: brown;
 
-      width:            180px;
+      width:            165px;
       height:           100px;
+
+      margin-right:     15px;
     }
   }
 }
