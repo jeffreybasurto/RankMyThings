@@ -4,13 +4,14 @@
 @import "compass";
 @import "compass/css3";
 
-$standard-bg:       #336078;
+$standard-bg:       #E6F1F4;
 $standard-card:     linen;
 
 body.public {
   background-color: $standard-bg;
 
   .content {
+    @include            single-box-shadow;
     position:           absolute;
 
     top:                50%;
@@ -25,6 +26,8 @@ body.public {
 
     padding:            20px;
     padding-right:      0;
+
+    border:             3px solid darken($standard-bg, 17%);
 
     h1 {
       color:            #fff;
@@ -45,6 +48,8 @@ body.public {
     }
 
     .card {
+      @include            single-box-shadow;
+
       @include          inline-block;
       @include          border-radius(5px);
 
@@ -55,6 +60,7 @@ body.public {
       margin-right:     15px;
 
       td {
+        @include        text-shadow(white 1px 1px 0px);
         height:         100px;
         width:          165px;
         text-align:     center;
