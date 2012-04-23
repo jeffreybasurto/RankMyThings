@@ -15,6 +15,11 @@ body.public {
     margin:             0 auto;
     margin-top:         20px;
 
+    ul.rankable {
+      margin-top:       20px;
+      margin-bottom:    20px;
+    }
+
     .topic {
       @include          inline-block;
       @include          border-radius(5px);

@@ -1,5 +1,5 @@
 RankMyThings.helpers do
   def create_card(content, extra_classes)
-    "<div class='card #{extra_classes}'>#{content}</div>"
+    "<li class='ui-state-default card #{extra_classes}'>#{content}</li>"
   end
 end

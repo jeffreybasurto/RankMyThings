@@ -1,2 +1,9 @@
 
-<%= 5.times.collect { |i| create_card i, "topic" }.join("") %>
+<h1> Rank these in order of their importance to <em>you</em>.</h1>
+<ul class="rankable">
+  <%= 5.times.collect { |i| create_card i+1, "topic" }.join("") %>
+</ul>
+
+<ul class="rankable">
+  <%= 5.times.collect { |i| create_card i+1, "topic" }.join("") %>
+</ul>
