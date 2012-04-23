@@ -7,6 +7,7 @@
     <%= yield_content :assets %>
   </head>
   <body class="public">
+    <%= image_tag("/environment-banners/#{Padrino.env}-banner.png", :class => 'environment_banner') unless Padrino.env == "production" %>
     <div class="content">
       <%= yield %>
     </div>

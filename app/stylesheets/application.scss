@@ -7,21 +7,27 @@
 $standard-bg:       #E6F1F4;
 $standard-card:     linen;
 
+.environment_banner {
+  position:             fixed;
+  top:                  0;
+  left:                 0;
+  z-index:              10000;
+}
+
 body.public {
   background-color: $standard-bg;
 
   .content {
     @include            single-box-shadow;
-    position:           absolute;
+    position:           relative;
 
     top:                50%;
-    left:               50%;
 
     background-color:   #754c24;
 
     width:              920px;
 
-    margin-left:        -470px;
+    margin:             0 auto;
     margin-top:         -200px;
 
     padding:            20px;
@@ -48,7 +54,8 @@ body.public {
     }
 
     .card {
-      @include            single-box-shadow;
+      cursor:           hand;
+      @include          single-box-shadow;
 
       @include          inline-block;
       @include          border-radius(5px);
