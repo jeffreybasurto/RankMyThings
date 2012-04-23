@@ -15,66 +15,71 @@ $standard-card:     linen;
 }
 
 body.public {
+  min-height:       400px;
   background-color: $standard-bg;
 
-  .content {
-    @include            single-box-shadow;
-    position:           relative;
+  .outter_container {
+    height:               100%;
 
-    top:                50%;
+    .content {
+      @include            single-box-shadow;
+      position:           relative;
 
-    background-color:   #754c24;
+      top:                50%;
 
-    width:              920px;
+      background-color:   #754c24;
 
-    margin:             0 auto;
-    margin-top:         -200px;
+      width:              920px;
 
-    padding:            20px;
-    padding-right:      0;
+      margin:             0 auto;
+      margin-top:         -200px;
 
-    border:             3px solid darken($standard-bg, 17%);
+      padding:            20px;
+      padding-right:      0;
 
-    h1 {
-      color:            #fff;
+      border:             3px solid darken($standard-bg, 17%);
 
-      @include          text-shadow(rgba(blue, 0.2) 1px 1px 1px);
+      h1 {
+        color:            #fff;
 
-      font-size:        30px;
-      font-family:      'Della Respira', serif;
-    }
+        @include          text-shadow(rgba(blue, 0.2) 1px 1px 1px);
 
-    ul.rankable {
-      margin-top:       20px;
-      margin-bottom:    20px;
-    }
+        font-size:        30px;
+        font-family:      'Della Respira', serif;
+      }
 
-    .topic {
+      ul.rankable {
+        margin-top:       20px;
+        margin-bottom:    20px;
+      }
 
-    }
+      .topic {
 
-    .card {
-      cursor:           hand;
-      @include          single-box-shadow;
+      }
 
-      @include          inline-block;
-      @include          border-radius(5px);
+      .card {
+        cursor:           hand;
+        @include          single-box-shadow;
 
-      border:           1px solid #000;
+        @include          inline-block;
+        @include          border-radius(5px);
 
-      background-color: $standard-card;
+        border:           1px solid #000;
 
-      margin-right:     15px;
+        background-color: $standard-card;
 
-      td {
-        @include        text-shadow(white 1px 1px 0px);
-        height:         100px;
-        width:          165px;
-        text-align:     center;
+        margin-right:     15px;
 
-        font-size:        24px;
-        font-family:      'Play', sans-serif;;
-        color:            navy;
+        td {
+          @include        text-shadow(white 1px 1px 0px);
+          height:         100px;
+          width:          165px;
+          text-align:     center;
+
+          font-size:        24px;
+          font-family:      'Play', sans-serif;;
+          color:            navy;
+        }
       }
     }
   }

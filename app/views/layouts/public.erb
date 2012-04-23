@@ -8,8 +8,11 @@
   </head>
   <body class="public">
     <%= image_tag("/environment-banners/#{Padrino.env}-banner.png", :class => 'environment_banner') unless Padrino.env == "production" %>
-    <div class="content">
-      <%= yield %>
+
+    <div class="outter_container">
+      <div class="content">
+        <%= yield %>
+      </div>
     </div>
 
     <%= javascript_include_tag 'jquery','application' %>
