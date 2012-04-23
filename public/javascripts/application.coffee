@@ -1,1 +1,2 @@
-alert "coffeescript"
+$ ->
+  # jquery on dom ready
