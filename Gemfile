@@ -11,7 +11,15 @@ gem 'sinatra-flash', :require => 'sinatra/flash'
 # Component requirements
 gem 'compass'
 gem 'erubis', "~> 2.7.0"
-gem 'dm-sqlite-adapter'
+
+group :development, :test do
+  gem 'dm-sqlite-adapter'
+end
+
+group :production do
+  gem 'dm-postgres-adapter'
+end
+
 gem 'dm-validations'
 gem 'dm-timestamps'
 gem 'dm-migrations'
@@ -20,8 +28,12 @@ gem 'dm-aggregates'
 gem 'dm-core'
 
 # Test requirements
-gem 'rspec', :group => "test"
-gem 'rack-test', :require => "rack/test", :group => "test"
+group :test do
+  gem 'rspec'
+  gem 'rack-test', :require => "rack/test"
+end
+
+
 
 # Padrino Stable Gem
 gem 'padrino', '0.10.6'
