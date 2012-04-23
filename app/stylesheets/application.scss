@@ -10,7 +10,9 @@ body.public {
   background-color: $standard-bg;
 
   .content {
-    width: 920px;
+    width:          920px;
+
+    margin:         0 auto;
   }
 }
 
