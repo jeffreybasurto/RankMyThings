@@ -4,8 +4,10 @@
     <%= stylesheet_link_tag 'application' %>
     <%= yield_content :assets %>
   </head>
-  <body>
-    <%= yield %>
+  <body class="public">
+    <div class="content">
+      <%= yield %>
+    </div>
 
     <%= javascript_include_tag 'jquery','application' %>
   </body>
