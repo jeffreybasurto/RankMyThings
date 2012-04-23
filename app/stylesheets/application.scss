@@ -5,15 +5,27 @@
 @import "compass/css3";
 
 $standard-bg:       #336078;
+$standard-card:     linen;
 
 body.public {
   background-color: $standard-bg;
 
   .content {
+    background-color:  #754c24;
+
     width:              920px;
 
     margin:             0 auto;
     margin-top:         20px;
+
+    h1 {
+      color:            #fff;
+
+      @include          text-shadow(rgba(blue, 0.2) 1px 1px 1px);
+
+      font-size:        30px;
+      font-family:      'Della Respira', serif;
+    }
 
     ul.rankable {
       margin-top:       20px;
@@ -21,16 +33,27 @@ body.public {
     }
 
     .topic {
+
+    }
+
+    .card {
       @include          inline-block;
       @include          border-radius(5px);
 
       border:           1px solid #000;
-      background-color: brown;
 
       width:            165px;
       height:           100px;
 
+      text-align:       center;
+
+      background-color: $standard-card;
+
+      font-size:        24px;
+      color:            black;
+
       margin-right:     15px;
+
     }
   }
 }

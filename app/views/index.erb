@@ -1,9 +1,12 @@
 
-<h1> Rank these in order of their importance to <em>you</em>.</h1>
+<% seed_data = ["dogs", "children", "long winded things", "politics", "toothbrushes"] %>
+
+<h1>Drag to rank these in order of their importance to <em>you</em>.</h1>
 <ul class="rankable">
-  <%= 5.times.collect { |i| create_card i+1, "topic" }.join("") %>
+  <%= 5.times.collect { |i| create_card seed_data[i], "topic" }.join("") %>
 </ul>
 
+<h1>Rank these in order that you believe your opponent thinks about them.</h1>
 <ul class="rankable">
-  <%= 5.times.collect { |i| create_card i+1, "topic" }.join("") %>
+  <%= 5.times.collect { |i| create_card seed_data[i], "topic" }.join("") %>
 </ul>
