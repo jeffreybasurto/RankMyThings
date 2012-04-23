@@ -1,3 +1,2 @@
-  <div class="topic">random topic</div><div class="topic">random topic</div><div class="topic">random topic</div><div class="topic">random topic</div><div class="topic">random topic</div>
 
-
+<%= 5.times.collect { |i| create_card i, "topic" }.join("") %>
