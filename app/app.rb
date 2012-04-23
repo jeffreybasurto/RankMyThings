@@ -4,9 +4,6 @@ class RankMyThings < Padrino::Application
   register Padrino::Helpers
   register CompassInitializer
 
-  layout  :public            # Layout can be in views/layouts/foo.ext or views/foo.ext (default :application)
-
-
   configure :production do
     set :port, ENV["PORT"]
   end
@@ -63,8 +60,9 @@ class RankMyThings < Padrino::Application
   #     render 'errors/505'
   #   end
   #
+  layout  :public            # Layout can be in views/layouts/foo.ext or views/foo.ext (default :application)
 
   get "/" do
-    "Hello World!"
+    render :index
   end
 end
