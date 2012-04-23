@@ -11,12 +11,17 @@ body.public {
   background-color: $standard-bg;
 
   .content {
-    background-color:  #754c24;
+    position:           absolute;
+
+    top:                50%;
+    left:               50%;
+
+    background-color:   #754c24;
 
     width:              920px;
 
-    margin:             0 auto;
-    margin-top:         20px;
+    margin-left:        -470px;
+    margin-top:         -200px;
 
     padding:            20px;
     padding-right:      0;
