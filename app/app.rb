@@ -5,7 +5,7 @@ class RankMyThings < Padrino::Application
   register CompassInitializer
 
   configure :production do
-    set :port, 80
+    set :port, ENV["PORT"]
   end
 
   enable :sessions
